@@ -1,0 +1,25 @@
+<p-panel header="Pipes Numeros" class="p-2">
+    <h1>Pipes Numeros</h1>
+</p-panel>
+
+<div class="grid mt-3">
+
+    <div class="col-12 md:col-4">
+        <p-card header="Ventas" subheader="del año">
+            {{totalSells | number:'1.2-2'}}
+        </p-card>
+    </div>
+
+    <div class="col-12 md:col-4">
+        <p-card header="Ventas Brutas" subheader="del año">
+            {{totalSells + 21032103310 | currency:'COP': 'symbol':'1.4-4'}}
+        </p-card>
+    </div>
+
+    <div class="col-12 md:col-4">
+        <p-card header="Ganancia Porcentual" subheader="del año">
+            {{percentage | percent}}
+        </p-card>
+    </div>
+
+</div>

@@ -1,0 +1,65 @@
+<p-panel header="Pipes Basicos" class="p-2">
+
+    <h1>Pipes Básicos</h1>
+    <p>Pipes incluidos en Angular</p>
+
+</p-panel>
+
+<div class="grid mt-3">
+
+    <div class="col-12 md:col-4">
+        <p-card header="uppercase">
+            {{nameUpper | uppercase}}
+        </p-card>
+    </div>
+
+    <div class="col-12 md:col-4">
+        <p-card header="lowecase">
+            {{nameLower | lowercase}}
+        </p-card>
+    </div>
+
+    <div class="col-12 md:col-4">
+        <p-card header="titlecase">
+            {{fullName | titlecase}}
+        </p-card>
+    </div>
+
+    <div class="col-12 md:col-12">
+        <p-card header="date">
+            <ol>
+                <li>
+                    <strong> {{date | date}} </strong> - <i> date </i>
+                </li>
+                <li>
+                    <strong> {{date | date:'short'}} </strong> - <i> date:'short' </i>
+                </li>
+                <li>
+                    <strong>{{date | date:'long'}}</strong> - <i> date:'long' </i>
+                </li>
+                <li>
+                    <strong>{{date | date:'MMMM'}}</strong> - <i> date:'MMMM' </i>
+                </li>
+                <li>
+                    <strong>{{date | date:'MMMM dd, yy'}}</strong> - <i> date:'MMMM dd, yy' </i>
+                </li>
+            </ol>
+
+            <hr>
+
+            <ol>
+                <li>
+                    <strong>{{date | date:'long':'GMT-6'}}</strong> - <i> date:'long':'GMT-6' </i>
+                </li>
+                <li>
+                    <strong>{{date | date:'long':'GMT-4'}}</strong> - <i> date:'long':'GMT-4' </i>
+                </li>
+                <li>
+                    <strong>{{date | date:'long':'':'es-CO'}}</strong> - <i> date:'long':'':'es-CO' </i>
+                </li>
+            </ol>
+
+        </p-card>
+    </div>
+
+</div>
