@@ -56,7 +56,4 @@ export class UncommonPageComponent {
   }
 
 }
-function internal() {
-  throw new Error('Function not implemented.');
-}
 
